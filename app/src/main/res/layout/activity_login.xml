@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#0F0808"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -16,8 +17,7 @@
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -29,6 +29,9 @@
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="10dp"
+                android:drawableTint="#020202"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,7 +46,11 @@
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:backgroundTint="#020202"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:drawableTint="#0B0000"
+                android:inputType="textPassword"
+                android:textColorHighlight="#090909" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -53,8 +60,8 @@
             android:layout_marginTop="25dp"
             android:backgroundTint="#485460"
             android:text="LOGIN"
-            android:textSize="20dp"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/tvRegister"
@@ -67,4 +74,14 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="225dp"
+        app:srcCompat="@drawable/image2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
