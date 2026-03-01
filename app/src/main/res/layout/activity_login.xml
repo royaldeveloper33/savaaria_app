@@ -9,9 +9,9 @@
     tools:context=".LoginActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
         android:layout_marginBottom="203dp"
         android:orientation="vertical"
         android:padding="30dp"
@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#485460"
+            android:backgroundTint="#C9E1F7"
             android:text="LOGIN"
             android:textColor="#FFFFFF"
             android:textSize="20dp" />
@@ -79,9 +79,7 @@
         android:id="@+id/imageView"
         android:layout_width="415dp"
         android:layout_height="225dp"
-        app:srcCompat="@drawable/image2"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="2dp" />
+        app:srcCompat="@drawable/image2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

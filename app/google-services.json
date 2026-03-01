@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "955972262659",
+    "project_id": "savaari-ada68",
+    "storage_bucket": "savaari-ada68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955972262659:android:f45c4b00c41e0022ca2736",
+        "android_client_info": {
+          "package_name": "com.example.savaari"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1dUUGTElBfA_kwXN__zFMA7bv_JS-klg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
