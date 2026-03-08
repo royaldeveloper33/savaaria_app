@@ -5,25 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#0F0808"
-    tools:context=".LoginActivity">
+    tools:context=".sign_in">
+
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
         android:layout_marginBottom="203dp"
         android:orientation="vertical"
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        tools:ignore="UnknownId">
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email">
+            android:hint="Create a Email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmail"
@@ -31,11 +33,9 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@android:drawable/ic_dialog_email"
                 android:drawablePadding="10dp"
-                android:drawableTint="#020202"
+                android:drawableTint="#0F0101"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -48,51 +48,58 @@
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#020202"
                 android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-                android:drawableTint="#0B0000"
-                android:inputType="textPassword"
+                android:drawableTint="#0D0C0C"
                 android:drawablePadding="10dp"
-                android:textColorHighlight="#090909" />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/tvRegister2"
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginTop="15dp"
-            android:text="forgot password"
-            android:textColor="#485460"
-            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#167AD7"
-            android:text="LOGIN"
+            android:backgroundTint="#2888E7"
+            android:text="SIGN IN"
             android:textColor="#FFFFFF"
             android:textSize="20dp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="203dp"
+        android:layout_height="53dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="193dp">
+
         <TextView
-            android:id="@+id/tvRegister"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:text="New User? Register Here"
-            android:textColor="#485460"
-            android:textStyle="bold" />
-
+            android:lineSpacingExtra="20dp"
+            android:text="SAVAARI"
+            android:textColor="#090909"
+            android:textSize="45sp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="415dp"
-        android:layout_height="225dp"
-        app:srcCompat="@drawable/image2" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Savaari">
         <activity
+            android:name=".sign_in"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
