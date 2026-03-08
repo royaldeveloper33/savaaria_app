@@ -5,19 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#0F0808"
     tools:context=".LoginActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
         android:layout_marginBottom="203dp"
         android:orientation="vertical"
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        tools:ignore="UnknownId">
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -29,9 +30,6 @@
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@android:drawable/ic_dialog_email"
-                android:drawablePadding="10dp"
-                android:drawableTint="#020202"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,11 +44,7 @@
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#020202"
-                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-                android:drawableTint="#0B0000"
-                android:inputType="textPassword"
-                android:textColorHighlight="#090909" />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -58,10 +52,10 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="#C9E1F7"
+            android:backgroundTint="#485460"
             android:text="LOGIN"
-            android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/tvRegister"
@@ -74,12 +68,4 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="415dp"
-        android:layout_height="225dp"
-        app:srcCompat="@drawable/image2" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
