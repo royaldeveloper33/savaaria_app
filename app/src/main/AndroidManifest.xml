@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Savaari">
         <activity
+            android:name=".Vehicals"
+            android:exported="false" />
+        <activity
+            android:name=".vehical"
+            android:exported="false" />
+        <activity
+            android:name=".info"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
